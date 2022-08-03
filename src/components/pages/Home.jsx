@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../UI/Button";
-import SnowParticles from "../UI/Particles";
+import SnowParticles from "../UI/SnowParticles";
 
 const Home = () => {
   return (

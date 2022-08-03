@@ -1,10 +1,14 @@
 import React from "react";
 
-const Container = ({ children }) => {
+const Container = ({ children, addedClasses }) => {
   return (
-    <section className="flex w-full flex-col items-center justify-center py-[80px] px-4 text-secondary-400">
+    <div
+      className={` w-full
+     items-center justify-center border-b border-black py-[80px]  px-8 text-secondary-400 lg:px-[60px] ${addedClasses} container mx-auto
+    xl:max-w-[1355px]`}
+    >
       {children}
-    </section>
+    </div>
   );
 };
 

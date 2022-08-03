@@ -66,7 +66,6 @@ const snowConfig = {
     events: {
       onhover: {
         enable: true,
-        // mode: "bubble",
         mode: "repulse",
       },
       onclick: {

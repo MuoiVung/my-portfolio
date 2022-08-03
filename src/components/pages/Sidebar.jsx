@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import brand from "../../assets/imgs/brand.png";
 import SocialButton from "../UI/SocialButton";
 import {
@@ -12,12 +12,13 @@ import {
   messageIcon,
   suitcaseIcon,
 } from "../../assets/icons";
+import NavLinkItem from "../features/NavlinkItem";
 
 const Sidebar = () => {
   return (
     <>
       {/* sidebar pc */}
-      <div className="fixed inset-y-0 left-0 hidden h-screen min-w-[290px] flex-col border-r border-black bg-bg-1 px-10 pt-[50px] pb-10 lg:flex">
+      <aside className="fixed inset-y-0 left-0 hidden h-screen min-w-[290px] flex-col border-r border-black bg-bg-1 px-10 pt-[50px] pb-10 lg:flex">
         {/* avatar */}
         <img
           src={brand}
@@ -31,51 +32,62 @@ const Sidebar = () => {
           <li className="group">
             <a
               href="#home"
-              className="flex font-secondary text-secondary-300 transition-colors duration-300 group-hover:text-primary"
+              className={`flex 
+                  font-secondary
+              text-secondary-300 transition-colors duration-300  hover:text-primary `}
             >
               {houseIcon}
               <span className=" ml-[10px] uppercase">Home</span>
             </a>
           </li>
+          {/* <NavLinkItem src="#home" icon={houseIcon} name="Home" /> */}
 
           {/* about */}
           <li className="group">
             <a
-              href="#home"
-              className="flex font-secondary text-secondary-300 transition-colors duration-300 group-hover:text-primary"
+              href="#about"
+              className={` flex 
+                  font-secondary
+              text-secondary-300 transition-colors duration-300  hover:text-primary `}
             >
               {humanIcon}
               <span className=" ml-[10px] uppercase">about</span>
             </a>
           </li>
 
-          {/* experience */}
-          <li className="group">
-            <a
-              href="#home"
-              className="flex font-secondary text-secondary-300 transition-colors duration-300 group-hover:text-primary"
-            >
-              {documentsIcon}
-              <span className=" ml-[10px] uppercase">experience</span>
-            </a>
-          </li>
-
           {/* works */}
           <li className="group">
             <a
-              href="#home"
-              className="flex font-secondary text-secondary-300 transition-colors duration-300 group-hover:text-primary"
+              href="#works"
+              className={` flex 
+                  font-secondary
+              text-secondary-300 transition-colors duration-300  hover:text-primary `}
             >
               {suitcaseIcon}
               <span className=" ml-[10px] uppercase">works</span>
             </a>
           </li>
 
+          {/* skills */}
+          <li className="group">
+            <a
+              href="#skills"
+              className={` flex 
+                  font-secondary
+              text-secondary-300 transition-colors duration-300  hover:text-primary `}
+            >
+              {documentsIcon}
+              <span className=" ml-[10px] uppercase">skills</span>
+            </a>
+          </li>
+
           {/* contact */}
           <li className="group">
             <a
-              href="#home"
-              className="flex font-secondary text-secondary-300 transition-colors duration-300 group-hover:text-primary"
+              href="#contact"
+              className={`flex 
+                  font-secondary
+              text-secondary-300 transition-colors duration-300  hover:text-primary `}
             >
               {messageIcon}
               <span className=" ml-[10px] uppercase">contact</span>
@@ -98,10 +110,10 @@ const Sidebar = () => {
 
           <SocialButton src="#Home" icon={linkedlnIcon} />
         </div>
-      </div>
+      </aside>
 
       {/* sidebar mobile */}
-      <div className="absolute top-0 z-50 flex w-full items-center justify-between px-[30px] py-[15px] text-white lg:hidden">
+      <aside className="absolute top-0 z-50 flex w-full items-center justify-between px-[30px] py-[15px] text-white lg:hidden">
         {/* avatar */}
         <img
           src={brand}
@@ -113,7 +125,7 @@ const Sidebar = () => {
         <span id="menuBtn" className="text-[100px] text-primary">
           {menuIcon}
         </span>
-      </div>
+      </aside>
     </>
   );
 };

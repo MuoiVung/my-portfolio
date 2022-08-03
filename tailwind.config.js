@@ -12,6 +12,7 @@ module.exports = {
           '200': "#CED0D4",
           '300': '#E4E6EA',
           '400': '#c4cfde',
+          '500': '#7c838e',
         },
         tertiary: "#0d1013",
         'bg-1': "#212428",
@@ -24,6 +25,9 @@ module.exports = {
       boxShadow: {
         '1': '10px 10px 19px #1c1e22, -10px -10px 19px #262a2e',
         '2': 'inset 21px 21px 19px #181a1d, inset -21px -21px 19px #202225'
+      },
+      borderColor: {
+        'black-500': '#1a1d23'
       },
       backgroundImage: {
         social: "linear-gradient(to right bottom, #212428, #16181c)",
