@@ -12,8 +12,8 @@
 
 @layer components {
   .btn-social {
-    @apply flex h-[53px] w-[53px] items-center justify-center rounded-lg bg-bg-2 text-secondary-400 shadow-1 transition-all
-        duration-300 hover:-translate-y-1 hover:bg-bg-3 hover:text-white;
+    @apply flex h-[60px] w-[60px] items-center justify-center rounded-lg bg-bg-2 text-secondary-400 shadow-1 transition-all duration-300 hover:-translate-y-1
+        hover:bg-bg-3 hover:text-white md:h-[53px] md:w-[53px];
   }
   .title {
     @apply mb-10 text-center font-secondary text-[34px] font-bold capitalize lg:text-[60px];
