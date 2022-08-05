@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.9fec50ab.css",
+    "main.js": "/my-portfolio/static/js/main.637a1c8f.js",
+    "static/media/winter-dogs.jpg": "/my-portfolio/static/media/winter-dogs.a9e67a0115f5a027c834.jpg",
+    "static/media/personal-avatar.jpg": "/my-portfolio/static/media/personal-avatar.639e2b9624b325cf2b8a.jpg",
+    "static/media/contact.png": "/my-portfolio/static/media/contact.8ddfbfd11798f881db54.png",
+    "static/media/brand.png": "/my-portfolio/static/media/brand.95616acbdcb13062b803.png",
+    "static/media/work-2.jpg": "/my-portfolio/static/media/work-2.3274394f23c384f0a3ac.jpg",
+    "static/media/work-3.jpg": "/my-portfolio/static/media/work-3.55f29a7d5045b27e9f43.jpg",
+    "static/media/work-1.jpg": "/my-portfolio/static/media/work-1.30e7353df71334e3b763.jpg",
+    "static/media/skill-react.svg": "/my-portfolio/static/media/skill-react.e68b35f4774979ae220b1d5d7b345b00.svg",
+    "static/media/skill-redux.svg": "/my-portfolio/static/media/skill-redux.0e4fb1c819ac4c060c92343147d4ccf7.svg",
+    "static/media/skill-tailwind.svg": "/my-portfolio/static/media/skill-tailwind.315d0ac2a2708d5f06972906113dfbf1.svg",
+    "index.html": "/my-portfolio/index.html",
+    "static/media/skill-css.svg": "/my-portfolio/static/media/skill-css.4e47c3122b8d2476a02f97dcfcb28640.svg",
+    "static/media/skill-html5.svg": "/my-portfolio/static/media/skill-html5.f318c8b1d5945fa9adc827ae94849cb1.svg",
+    "static/media/skill-js.svg": "/my-portfolio/static/media/skill-js.b879f838faf1cb951d1c2230fd933a39.svg",
+    "main.9fec50ab.css.map": "/my-portfolio/static/css/main.9fec50ab.css.map",
+    "main.637a1c8f.js.map": "/my-portfolio/static/js/main.637a1c8f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9fec50ab.css",
+    "static/js/main.637a1c8f.js"
+  ]
+}
