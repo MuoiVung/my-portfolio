@@ -17,7 +17,16 @@ module.exports = {
         'light-gray': '#878e99',
         tertiary: "#0d1013",
         'bg-1': "#212428",
-        'black-600': '#191B1E'
+        'black-600': '#191B1E',
+        error: '#ff1100',
+        success: '#008000'
+      },
+      backgroundColor: {
+        error: 'rgba(255, 0, 3, 0.1215686275)',
+        success: 'rgba(62, 183, 94, 0.1803921569)'
+      },
+      borderColor: {
+        'black-500': '#1a1d23',
       },
       fontFamily: {
         primary: ['Poppins', 'sans-serif'],
@@ -28,14 +37,11 @@ module.exports = {
         '2': 'inset 21px 21px 19px #181a1d, inset -21px -21px 19px #202225',
         'inner': ' 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;'
       },
-      borderColor: {
-        'black-500': '#1a1d23',
-      },
       backgroundImage: {
         social: "linear-gradient(to right bottom, #212428, #16181c)",
         'bg-2': "linear-gradient(145deg, #1e2024, #23272b)",
         'bg-3': "linear-gradient(to right bottom, #212428, #16181c)"
-      }
+      },
     },
   },
   plugins: [],

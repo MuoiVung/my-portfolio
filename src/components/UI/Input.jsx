@@ -6,10 +6,15 @@ const inputStyle =
 const textAreaStyle =
   "font-md min-h-[52px] rounded-md border border-black-600 bg-black-600 px-4 shadow-inner outline-none duration-300 focus:border-primary py-4 resize-none";
 
-const Input = ({ label, type, textArea }) => {
-  console.log(textArea);
+const Input = ({ label, type, textArea, refValue }) => {
   const inputField = (
-    <input type={type} className={inputStyle} name={label} id={label} />
+    <input
+      type={type}
+      className={inputStyle}
+      name={label}
+      id={label}
+      ref={refValue}
+    />
   );
 
   const textAreaField = (
@@ -19,6 +24,7 @@ const Input = ({ label, type, textArea }) => {
       cols="30"
       rows="10"
       className={textAreaStyle}
+      ref={refValue}
     ></textarea>
   );
 
@@ -28,7 +34,7 @@ const Input = ({ label, type, textArea }) => {
     <div className="flex flex-1 flex-col space-y-4">
       {/* label */}
       <label
-        htmlFor="name"
+        htmlFor={label}
         className="text-sm font-medium uppercase tracking-widest text-light-gray"
       >
         {label}

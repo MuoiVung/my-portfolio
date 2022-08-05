@@ -23,7 +23,9 @@ const Home = () => {
           </p>
 
           {/* contact button */}
-          <Button>Contact me</Button>
+          <Button type="a" to="#contact">
+            Contact me
+          </Button>
         </div>
       </div>
     </section>

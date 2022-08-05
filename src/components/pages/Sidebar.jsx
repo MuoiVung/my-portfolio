@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import brand from "../../assets/imgs/brand.png";
 import SocialButton from "../UI/SocialButton";
 import {
@@ -15,6 +15,17 @@ import {
 import NavLinkItem from "../features/NavlinkItem";
 
 const Sidebar = () => {
+  const [activeNavLink, setActiveNavLink] = useState("");
+
+  useEffect(() => {
+    setActiveNavLink(document.location.hash.toLowerCase());
+  }, []);
+
+  const clickNavLinkHandler = (event) => {
+    const newActiveLink = event.currentTarget.dataset.src;
+    setActiveNavLink(newActiveLink);
+  };
+
   return (
     <>
       {/* sidebar pc */}
@@ -29,70 +40,49 @@ const Sidebar = () => {
         {/* navigation */}
         <ul className="mx-auto mt-16 space-y-6">
           {/* home */}
-          <li className="group">
-            <a
-              href="#home"
-              className={`flex 
-                  font-secondary
-              text-secondary-300 transition-colors duration-300  hover:text-primary `}
-            >
-              {houseIcon}
-              <span className=" ml-[10px] uppercase">Home</span>
-            </a>
-          </li>
-          {/* <NavLinkItem src="#home" icon={houseIcon} name="Home" /> */}
+          <NavLinkItem
+            src="#home"
+            icon={houseIcon}
+            name="home"
+            activeNavLink={activeNavLink}
+            onClickNavLink={clickNavLinkHandler}
+          />
 
           {/* about */}
-          <li className="group">
-            <a
-              href="#about"
-              className={` flex 
-                  font-secondary
-              text-secondary-300 transition-colors duration-300  hover:text-primary `}
-            >
-              {humanIcon}
-              <span className=" ml-[10px] uppercase">about</span>
-            </a>
-          </li>
+          <NavLinkItem
+            src="#about"
+            icon={humanIcon}
+            name="about"
+            activeNavLink={activeNavLink}
+            onClickNavLink={clickNavLinkHandler}
+          />
 
           {/* works */}
-          <li className="group">
-            <a
-              href="#works"
-              className={` flex 
-                  font-secondary
-              text-secondary-300 transition-colors duration-300  hover:text-primary `}
-            >
-              {suitcaseIcon}
-              <span className=" ml-[10px] uppercase">works</span>
-            </a>
-          </li>
+          <NavLinkItem
+            src="#works"
+            icon={suitcaseIcon}
+            name="works"
+            activeNavLink={activeNavLink}
+            onClickNavLink={clickNavLinkHandler}
+          />
 
           {/* skills */}
-          <li className="group">
-            <a
-              href="#skills"
-              className={` flex 
-                  font-secondary
-              text-secondary-300 transition-colors duration-300  hover:text-primary `}
-            >
-              {documentsIcon}
-              <span className=" ml-[10px] uppercase">skills</span>
-            </a>
-          </li>
+          <NavLinkItem
+            src="#skills"
+            icon={documentsIcon}
+            name="skills"
+            activeNavLink={activeNavLink}
+            onClickNavLink={clickNavLinkHandler}
+          />
 
           {/* contact */}
-          <li className="group">
-            <a
-              href="#contact"
-              className={`flex 
-                  font-secondary
-              text-secondary-300 transition-colors duration-300  hover:text-primary `}
-            >
-              {messageIcon}
-              <span className=" ml-[10px] uppercase">contact</span>
-            </a>
-          </li>
+          <NavLinkItem
+            src="#contact"
+            icon={messageIcon}
+            name="contact"
+            activeNavLink={activeNavLink}
+            onClickNavLink={clickNavLinkHandler}
+          />
         </ul>
 
         {/* divide */}
